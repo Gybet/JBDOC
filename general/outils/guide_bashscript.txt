@@ -1,0 +1,11 @@
+Guide creation de bash script :
+
+--> créer un fichier
+--> insérer la première ligne : #!/bin/bash il s'agit du "shebang" c'est une ligne qui indique quel interpreteur utiliser
+--> insérer les commandes
+--> rendre le fichier executable avec : chmod +x NOM_FICHIER
+
+--> executer avec : ./NOM_FICHIER
+
+
+

@@ -1,0 +1,38 @@
+-----------------------------------------
+       GUIDE SUR LE SSH (LINUX)
+-----------------------------------------
+
+
+1) INSTALLATION/LANCEMENT SERVEUR SSH
+ 
+ SUR MACHINE SERVEUR :
+
+ - Installation
+   sudo apt update (maj general)
+   sudo apt install openssh-server
+
+ - Activation : sudo systemctl enable --now ssh
+
+ - Verif : sudo systemctl status ssh
+
+ - Lecture addresse ip : ip addr ou (hostname -I)
+
+2) GENERATION DE LA PAIRE DE CLES
+
+ SUR MACHINE CLIENT :
+  
+  - verif existance cle :
+   ls -la ~/.ssh --> liste les fichiers dans le dossier ssh
+
+  - si pas de cle, genere une cle :
+   ssh-keygen -t ed25519
+
+  - pousser la clé sur le serveur :
+   ssh-copy-id [user (serveur)]@[ip]
+
+  - tester la connexion :
+   ssh [user (server)]@[ip]
+
+  - desactiver l'auth par mdp :
+     editer /etc/ssh/sshd_config  tq : passwordPubKey yes -> no
+

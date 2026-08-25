@@ -1,0 +1,20 @@
+
+Guide des fonctions liées au wifi
+
+
+Pour scanner les réseaux wifi environnants : 
+
+sudo iwlist wlan0 scan
+
+Cell X ---> identifie une entrée réseau (appelée cellule) chaque point BSSID a sa propre cell
+
+Address ---> adresse mac du point d'accès
+
+ESSID ---> nom du réseau (SSID) si vide : SSID masqué
+
+Mode :  Master (point d'acces) ou ad hoc (peer to peer)
+
+Encryption key : On si réseau sécurisé off si réseau ouvert
+
+IE : blocs d'extension indiquant le type de sécurité
+

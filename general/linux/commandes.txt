@@ -1,0 +1,41 @@
+Guide des commandes : 
+
+nano : lancer nano l'editeur de texte
+
+OS : 
+
+sudo apt update : met a jour la liste des paquets
+sudo apt upgrade : telecharge et installe la mise à jour des paquets
+sudo apt list : liste les programmes installés
+
+MODE ROOT : 
+
+sudo -i pour passer en mode root
+exit pour quitter le mode root
+
+SCRIPT : 
+
+sh -c '...' execute la chaine de caractere par le shell
+
+
+NAVIGATION :
+
+cd : change le dossier dans lequel s'execute la commande
+	cd .. : retourne au dossier parent
+
+FICHIERS :
+
+ls : lister les fichiers dans le dossier courant
+mv : deplacer ou renomme un fichier
+rm : supprime un fichier
+
+ln -s [path] : créer un "symlink" (un raccourics) vers le path
+
+RESEAU :
+arp : visualise la table arp
+
+
+
+echo : ecrit l'element passé en argument dans le terminal
+
+

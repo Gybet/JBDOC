@@ -1,0 +1,68 @@
+====== I Model OSI =========
+
+Le model OSI est une norme permettant de modeliser les communications informatiques.
+Il est décomposé en plusieur couche.
+
+Niveau 1 - Physique -> bits circulant sur un support (cable de cuivre)
+Niveau 2 - Liaison -> construction de "Trames" addressage par adrresse MAC 
+Niveau 3 - Réseau -> construction de "Paquets" addressage par IP
+Niveau 4 - Transport -> construction de segments,connexion BeB, controle de flux, notion de ports (protocoles TCP / UDP)
+
+
+======= II Interface reseau ======== 
+
+===== III Protocoles ======
+
+--- III.1 protocole Ethernet ---
+
+Le protocole Ethernet est assure le fonctionnement des couches 1 et 2.
+Ie la construction et l'envoi de trame sur un support physique (ex cuivre)
+
+
+--- III.1 protcole ARP ---
+
+ARP = adress resolution protocol
+
+Le procole ARP permet le lien entre le niveau 2 et 3
+
+ex : mon pc veut envoyer un paquet a l'adresse IP 168.x.x.x 
+-> pour cela il a besoin de determiner l'adresse MAC
+-> il regarde sa table locale -> si trouvé il envoie ; sinon
+-> il envoie un message ARP sur le reseau (demande en broadcast)
+-> la machine concernée repond avec son adresse mac
+-> table locale mise a jour
+
+/!\ ARP n'est utilisé que pour les IPv4 pour les IPv6
+ c'est le mrotocole NDP
+
+--- III.2 Protocole IP ------
+
+Le procole IP est utilisé pour transmettre des segments (datagrammes) entre les réseaux (locaux).
+Le procole IP défini comment transmettre des paquets via l'adresse IP
+
+IV adresse IP :
+
+IV.1 IPV4 :
+
+L'ip V4 est la forme la plus courante de l'ip
+Elle se présente sur 32 bits. Elle peut donc etre décomposée en 4 octet.
+Représenter ces 4 octets en base 10 donne la notation habituelle :
+
+ex : 192.1.2.1
+
+
+
+
+COMMANDES :
+
+
+
+
+We all use the Internet Protocol (IP) daily, whether we're aware of it or not. For instance, any time you type a website name or a search term into your web browser, 
+it looks up the IP address of that URL (or of a search engine) and then loads the website.
+
+Let's divide IP addresses into two categories: private and public. 
+Private IP addresses are the ones your WiFi box (and company intranet) provide. T
+hey are in the range of 10.x.x.x, 172.16.x.x-172.31.x.x, and 192.168.x.x, where x=0 to 255. 
+Public IP addresses, as the name suggests, are "public" and you can reach them from anywhere in the world. 
+Every website has a unique IP address that can be reached by anyone and from anywhere; that is considered a public IP address.
