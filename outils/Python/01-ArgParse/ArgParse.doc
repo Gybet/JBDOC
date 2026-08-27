@@ -1,0 +1,47 @@
+------------------------------------
+               ArgParse
+------------------------------------
+
+
+Salut JB, aujourd'hui on va voir comment utiliser ArgParse en python
+
+
+I) Principe
+
+Argparse permet de faire appel a des scripts python en ligne de commande
+en passant directement des arguments sans avoir a les mettre dans un fichier
+.env ou dans le code
+
+ ex  : python script.py --name bob
+       
+       ---> 'salut bob !'
+
+II) Concepts cles 
+
+
+ Argument positionnel : c'est un argument interprete par l'ordre qu'il occupe
+                        il est obligatoire
+
+ Argument optionnel   : c'est un argument interprete en fonction du mot cle
+                        qui le precede 
+
+ Flag booleen         : c'est un argument qui ne prend pas de valeur mentionner
+                        son nom dans la commande lui donne la valeur true (et
+			false s'il est omis)
+			
+
+ Valeur par defaut    : les arguments peuvent prendre une valeur par defaut
+
+ Typage               : les arguments peuvent etre converti en un type donne
+
+ Liste de choix       : les arguments peuvent etre assoicies a une liste de
+                        valeur possible, le programme rejettra les autres
+
+
+
+III) Exemple
+
+ Voir le fichier argparse_example.py
+
+
+
