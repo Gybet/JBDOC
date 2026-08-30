@@ -1,0 +1,34 @@
+------------------------------------------
+               NVIM
+-----------------------------------------
+
+
+
+
+I ) Principe 
+
+   
+   Nvim est un editeur de texte customisable
+
+
+
+II ) Notions
+
+
+ -- Les modes :
+
+     Nvim peut se trouver dans differents modes
+     
+     - Le mode general : permet de taper des commandes
+
+     - Le mode insert  : permet de taper du texte
+
+     - Le mode visuel  : permet les copier/coller etc...  
+
+
+ -- Les plugins :
+
+
+     Nvim permet l'installation de plugins managers et de plugins
+     
+     Voir par exemple vim-plug ou lazy.nvim

@@ -1,0 +1,44 @@
+------------------------------------------
+          NVIM PLUGIN
+-----------------------------------------
+
+
+
+Salut JB, ajd on parle des plugins nvim
+aaaah l'enfer...
+
+
+0) les plugins manager
+
+Le plus simple est de mettre en place un plugin manager
+afin de gerer l'isntallation et les dependances de plugins
+
+
+Selon les cas
+
+Si nvim <0.8 on dispose vim-plug comme gestionnaire de plugin
+
+
+installation vim plug: 
+
+-- EMPLACEMENT : 
+
+   Pour Neovim, vim-plug doit être placé dans :
+   ~/.local/share/nvim/site/autoload/plug.vim
+
+-- COMMANDE D INSTALL VIM PLUG: 
+
+   curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
+     --create-dirs \
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+-- CONFIG DANS NVIM : 
+ 
+   Cree un fichier ~/.config/nvim/init.vim
+   Voir exemple de fichier init_sample.vim
+
+ 
+
+
+
+
