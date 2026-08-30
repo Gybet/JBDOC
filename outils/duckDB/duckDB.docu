@@ -1,0 +1,39 @@
+-------------------------------------
+        duckDB
+ ------------------------------------
+
+
+
+ I - Intro
+
+ DuckDB est un systeme de base de donnee analytique.
+ A la difference des systeme de base de donnees conventionnels
+ il est capable de traiter des fichier de donnees bruts
+
+ Egalement duckDB ne necessite pas d'infra cloud pour
+ s'executer, il peut tourner sur une machine locale
+
+
+
+ II -  Execution
+
+ DuckDB dispose d'une API Python.
+ Un script basique permettant d'executer des requetes es:
+ disponible dans
+
+ ddb_python_exec.py
+
+ III - Conversion csv -> parquet
+
+
+ COPY(
+   SELECT * FROM 'data/orders.csv'
+   )
+ TO 'data/orders.parquet'
+ (FORMAT PARQUET);
+
+
+ Plus generalement cela permet d'ecrire le resultat de
+ n'importe quelle requete en format parquet
+
+
