@@ -7,19 +7,20 @@
 Salut JB, ajd on parle des plugins nvim
 aaaah l'enfer...
 
-
-0) les plugins manager
-
 Le plus simple est de mettre en place un plugin manager
 afin de gerer l'isntallation et les dependances de plugins
 
 
-Selon les cas
+Selon les cas : 
 
 Si nvim <0.8 on dispose vim-plug comme gestionnaire de plugin
 
+ATTENTION : VIM PLUG EST COMPATIBLE AVEC VIM 0.7
+            MAIS TOUS LES PLUGINS NE LE SONT PAS
 
-installation vim plug: 
+
+
+INSTALLATION DE VIM PLUG : 
 
 -- EMPLACEMENT : 
 
@@ -36,6 +37,12 @@ installation vim plug:
  
    Cree un fichier ~/.config/nvim/init.vim
    Voir exemple de fichier init_sample.vim
+
+
+IMPORTANT : APRES AVOIR MODIFIER LA CONFIG FAIRE :
+
+   :PlugInstall   dans nvim
+
 
  
 

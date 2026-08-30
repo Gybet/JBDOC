@@ -13,6 +13,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Coloration syntaxique pour la programmation 
+syntax enable
+
 " =========================
 " Raccourcis clavier
 " =========================
@@ -27,8 +30,23 @@ nnoremap <C-l> <C-w>l
 " Plugins
 " =========================
 
+" --- vim-srround ---
+
 call plug#begin()
 
 Plug 'tpope/vim-surround'
 
 call plug#end()
+
+" --- theme gruvbox ---
+
+call plug#begin()
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+set background=dark
+colorscheme gruvbox
+
+" --- next plugins ---
