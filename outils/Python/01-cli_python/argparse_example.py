@@ -14,7 +14,7 @@ parser.add_argument("--argopt")
 parser.add_argument("--nbpote" , type = int , default = 0)
 
 #definition d un flag
-parser.add_argument("--surprise", action = "store_true")
+parser.add_argument("--surprise", action = "store_true", help="Flag surprise")
 
 
 #lecture et affichage des arguments

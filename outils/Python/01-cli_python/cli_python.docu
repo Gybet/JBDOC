@@ -1,20 +1,28 @@
 ------------------------------------
-               ArgParse
+               CLI Python
 ------------------------------------
 
 
-Salut JB, aujourd'hui on va voir comment utiliser ArgParse en python
-
+Salut JB, aujourd'hui on va voir comment Faire un CLI en python
+(En utilisant ArgParse)
 
 I) Principe
 
-Argparse permet de faire appel a des scripts python en ligne de commande
-en passant directement des arguments sans avoir a les mettre dans un fichier
-.env ou dans le code
+  Argparse permet de faire appel a des scripts python en ligne de commande
+  en passant directement des arguments sans avoir a les mettre dans un fichier
+  .env ou dans le code
 
- ex  : python script.py --name bob
+    ex  : python script.py --name bob
        
-       ---> 'salut bob !'
+         ---> 'salut bob !'
+
+ 
+  On peut aussi rendre le fichier Python executable en utilisant un shebang
+  La premiere ligne du .py doit etre : 
+    
+    #!/usr/bin/env python3
+
+
 
 II) Concepts cles 
 
@@ -37,7 +45,8 @@ II) Concepts cles
  Liste de choix       : les arguments peuvent etre assoicies a une liste de
                         valeur possible, le programme rejettra les autres
 
-
+ Aide                 : On peut associer a chaque argument dans argparse une
+                        aide qui sera affiche si le -h ou --help est utilise
 
 III) Exemple
 
