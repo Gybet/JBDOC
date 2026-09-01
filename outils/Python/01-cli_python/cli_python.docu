@@ -30,12 +30,18 @@ II) Concepts cles
  Argument positionnel : c'est un argument interprete par l'ordre qu'il occupe
                         il est obligatoire
 
+                        ex : file.py <arg>
+
  Argument optionnel   : c'est un argument interprete en fonction du mot cle
-                        qui le precede 
+                        qui le precede
+
+                        ex : file.py --argument <arg_value>
 
  Flag booleen         : c'est un argument qui ne prend pas de valeur mentionner
                         son nom dans la commande lui donne la valeur true (et
-			false s'il est omis)
+			            false s'il est omis)
+
+                        ex : file.py --flag
 			
 
  Valeur par defaut    : les arguments peuvent prendre une valeur par defaut
@@ -48,9 +54,18 @@ II) Concepts cles
  Aide                 : On peut associer a chaque argument dans argparse une
                         aide qui sera affiche si le -h ou --help est utilise
 
+
+Sous commandes        : On peut associer des sous commandes au fichier python
+                        qui chacune lanceront un traitement précis
+
+
+
+
 III) Exemple
 
- Voir le fichier argparse_example.py
+ Pour un parser simple : voir le fichier argparse_example.py
+
+ Pour un parser avec des sous commandes : voir le fichier subparse_example.py
 
 
 

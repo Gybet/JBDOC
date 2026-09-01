@@ -3,7 +3,6 @@ import argparse
 #initialisation du parser (obligatoire)
 parser = argparse.ArgumentParser()
 
-
 #definition d'un argument positionnel
 parser.add_argument("argpos")
 

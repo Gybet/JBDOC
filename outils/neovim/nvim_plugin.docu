@@ -38,12 +38,17 @@ INSTALLATION DE VIM PLUG :
    Cree un fichier ~/.config/nvim/init.vim
    Voir exemple de fichier init_sample.vim
 
+   IMPORTANT : APRES AVOIR MODIFIER LA CONFIG FAIRE :
 
-IMPORTANT : APRES AVOIR MODIFIER LA CONFIG FAIRE :
-
-   :PlugInstall   dans nvim
+     :PlugInstall   dans nvim
 
 
+-- PLUGINS UTILS  :
+
+  un theme  (ex gruvbox)
+  tree-sitter   : coloration syntaxique plus poussée
+  ALE           : controle de code
+  
  
 
 

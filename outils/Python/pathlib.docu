@@ -1,0 +1,32 @@
+--------------------------------------------
+           Python path
+--------------------------------------------
+
+
+
+Salut JB, dans cette section on va voir comment manipuler
+les path en python.
+
+On va prioriser la lib pathlib
+
+01 -- import -- 
+
+  > from pathlib import Path
+
+  On va se servir exclusivement de la class Path
+
+
+02 -- Créer un path --
+
+  Pour créer un path : 
+  > Path("/blabla/blabla")
+
+
+03 -- Fonctions utiles --
+
+  path.exits() --> test si le path existe
+  path.is_dir  --> si c'est un dossier
+
+  p / q        --> concatenation de paths
+
+  p / 'blabla' --> concatenation de path str
