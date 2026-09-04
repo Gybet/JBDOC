@@ -19,7 +19,7 @@ parquet_query = f"""
 COPY ({sql_query}) TO '{ouputfile}' (FORMAT PARQUET);
 """
 
-
+print(con.sql(sql_query).df())
 
 result = con.sql(parquet_query)
 
