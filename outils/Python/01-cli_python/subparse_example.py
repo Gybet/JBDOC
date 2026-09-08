@@ -21,10 +21,14 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.command == "subcom1" : 
+        args = subcom1_parser.parse_args()
         print("commande 1 !")
+        print(subcom1_parser.arg_parser_1)
 
     elif args.command == "subcom2" :
+        args = subcom2_parser.parse_args()
         print("commande 2 !")
+        print(subcom2_parser.arg_parser_2)
 
 
 
