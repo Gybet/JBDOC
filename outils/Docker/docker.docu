@@ -1,0 +1,73 @@
+--------------------------------------------
+           DOCKER
+-------------------------------------------
+
+
+
+Salut JB bienvenue dans la doc sur DOCKER
+
+
+I CONCEPTS : 
+
+
+CONTENEUR : 
+            Un conteneur est un espace dans lequel des dépendance sont
+            accessibles (modules python, plugins node.js etc...)
+
+            --> le but d'un conteneur est de faire tourner une application
+                sur n'importe quelle machine
+
+            --> le cycle de vie d'un conteneur est : 
+                 Création --> Fonctionnement --> Terminaison
+
+
+
+IMAGE    :
+           Une image est un modèle de conteneur servant a instancier un
+           ou plusieurs conteneurs
+
+
+
+II COMMANDES :
+
+
+    images     : 
+            
+            docker image                   --> liste les images disponibles
+
+
+
+
+
+
+
+    conteneurs : 
+
+        docker ps                      --> liste les conteneurs            
+            (-a)                        :  inclus les conteneurs inactifs
+
+
+        docker run [image] [COMMANDE]  --> lance un conteneur basé sur l'image et sa commande
+
+            (-d)                        : détaché, le conteneur d'execute en arriere plan
+            (--name [NOM])              : nomme le conteneur
+            (--rm)                      : supprime automatiquement le conteneur a sa terminaison
+
+
+        docker stop [conteneur]        --> arrete un conteneur en cours d'éxécution
+
+        docker start [conteneur]       --> démarre un conteneur au statut terminé
+
+        docker retstart [conteneur]    --> docker stop puis docker start
+
+        docker rm [conteneur]          --> supprime le conteneur
+
+
+
+
+
+
+
+
+
+
